@@ -1,0 +1,19 @@
+{
+  "name": "EPA Hydraulic Gradient Calculator",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.blazorwasm-companion",
+        "ms-vscode.vscode-json"
+      ]
+    }
+  },
+  "forwardPorts": [5000, 5001],
+  "postCreateCommand": "dotnet restore ./HydraulicGradient/HydraulicGradient.csproj",
+  "remoteUser": "vscode"
+}
